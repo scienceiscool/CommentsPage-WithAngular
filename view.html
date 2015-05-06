@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Comments Page</title>
+	</head>
+
+	<body ng-app="Comment"> <!-- Initialize the main view -->
+		<!-- Tell view about the controller -->
+		<div class="page-container" ng-controller="CommentCtrl">
+			<h2>Comment</h2>
+
+			<ul class="comment-list" ng-repeat="comment in comments track by $index">
+				<li>
+					<span>{{ comment }}</span>
+				</li>
+			</ul>
+		</div>
+
+		<ul class="add-comment">
+			<li>
+				<input type="text" class="txt" placeholder="New Comment" ng-model="newComment" ng-keyup="add($event)"/>
+			</li>
+		</ul>
+
+		<script src="controller.js"></script>
+		<!-- Following from: https://docs.angularjs.org/misc/downloading -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angu    lar.min.js"></script>
+	</body>
+</html>
