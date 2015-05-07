@@ -51,7 +51,7 @@ body {
 */
 
 .comments li {
-  float: center;
+/*  float: center;*/
   width: 570px;
   padding: 7px;
   margin-bottom: 9px;
@@ -86,7 +86,7 @@ body {
                       it'll change into the pointing cursor */
   font-size: 1.5em; /* button gets larger */
   margin-left: 5px; /* puts some space between textbox and button */
-	float: center;
+	/*float: center;*/
 }
 
 /*
