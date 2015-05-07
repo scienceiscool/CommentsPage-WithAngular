@@ -3,6 +3,7 @@
 <html lang="en">
 	<head>
 		<title>Comments Page</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
 	<body ng-app="CommentsPage"> <!-- Initialize the main view -->
@@ -11,21 +12,21 @@
 			<h1>Comments</h1>
 			<p>A simple app that allows a user to input comments</p>
 
-			<h3>Comments:</h3>
-
-			<ul class="comments" ng-repeat="comment in commentsList">
-				<li>
-					<span>{{ comment }}</span>
-				</li>
-			</ul>
-
-			<h3>Write a comment below:</h3>
+			<!--<h3>Write a comment below:</h3>-->
 
 			<div class="add-comment">
 				<!--<input type="text" class="comment-input" placeholder="New Comment" ng-model="newComment" ng-keyup="add($event)"/>-->
 				<input type="text" ng-model="newComment" class="comment-input" placeholder="New comment"/>
 				<button ng-click="add($event)">+</button>
 			</div>
+
+			<!--<h3>Comments:</h3>-->
+
+			<ul class="comments" ng-repeat="comment in commentsList">
+				<li>
+					<span>{{ comment }}</span>
+				</li>
+			</ul>
 		</div>
 
 		<!-- Following from: https://docs.angularjs.org/misc/downloading -->
