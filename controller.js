@@ -13,7 +13,7 @@ app.controller('CommentCtrl', function ($scope) {
 			$scope.newComment = '';
 		}
 	}
-};
+});
 
 /*
 	$scope.add = function ($e) { 
