@@ -7,7 +7,7 @@ app.controller('CommentCtrl', function ($scope) {
 		'Me too'
 	];
 
-	$scope.add = function (e) { 
+	$scope.addCommentFromInputBox = function (e) { 
 		if ((e.which && e.which === 13) && ($scope.newComment !== '')) { // 13 = Enter key
 			//console.log("hi");
 			$scope.commentsList.push($scope.newComment);

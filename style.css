@@ -6,22 +6,14 @@
 
 body {
   width: 855px;
+	overflow: auto; /**/
+	padding: 30px 0; /**/
   margin: auto;
-  background: ivory;
+  background: seagreen;
   font-size: 100%;
   font-family: "Arial", sans-serif;
-}
-/*
-main {
-  overflow: auto;
   border-bottom: 1px solid darkslategray;
 }
-*/
-/*
-head title {
-  float: left;
-}
-*/
 
 .page-container p {
   float: left;
@@ -31,43 +23,12 @@ head title {
   margin-top: 10px;
 }
 
-body {
-  overflow: auto;
-  padding: 30px 0;
-  border-bottom: 1px solid darkslategray;
-}
-
 .add-comment {
   float: left;
   /*width: 285px;*/
 	padding: 7px;
 	width: 99%;
 }
-
-/*
-.comment-input {
-  margin-bottom: 10px;
-}
-*/
-
-.comments li {
-/*  float: center;*/
-  width: 570px;
-  padding: 7px;
-  margin-bottom: 9px;
-  border-radius: 5px; /* rounds the edges of the comment background */
-	background: seagreen;
-}
-
-/*
-.comments li:nth-child(even) {
-  background: palevioletred;
-}
-
-.comments li:nth-child(odd) {
-  background: pink;
-}
-*/
 
 .add-comment input {
   width: 80%;
@@ -89,55 +50,29 @@ body {
 	/*float: center;*/
 }
 
-/*
-.comment-input {
-  float: left;
-  width: 285px;
-}
-
-.comment-input p {
-  margin-bottom: 10px;
-}
-*/
-
-/************/
-.comment-input input {
-  width: 80%;
-  height: 30px;
-  font-size: 1.2em; /* textbox input will be a tad larger than default */
-  font-weight: bold; /* textbox input will be bold */
-}
-
-.comment-input button {
-  font-weight: bold; /* button text will be emboldened */
-  padding: 3px;
-  border-radius: 5px; /* adds cool 3D sort of effect to button */
-  color: ivory; /* button text will turn this color */
-  background: seagreen; /* background of button will be this color */
-  cursor: pointer; /* When you hover your mouse over the button,
-                      it'll change into the pointing cursor */
-  font-size: 1.5em; /* button gets larger */
-  margin-left: 5px; /* puts some space between textbox and button */
-}
-
 .comments {
   float: right;
   width: 570px;
 }
 
-.comments p {
-  padding: 5px;
-  margin-bottom: 10px;
+.comments li {
+/*  float: center;*/
+  width: 570px;
+  padding: 7px;
+  margin-bottom: 9px;
   border-radius: 5px; /* rounds the edges of the comment background */
+	background: pink;
 }
 
-.comments p:nth-child(even) {
+/*
+.comments li:nth-child(even) {
   background: palevioletred;
 }
 
-.comments p:nth-child(odd) {
-  background: palegreen;
+.comments li:nth-child(odd) {
+  background: pink;
 }
+*/
 
 footer {
   font-size: smaller;

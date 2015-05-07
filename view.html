@@ -3,6 +3,8 @@
 <html lang="en">
 	<head>
 		<title>Comments Page</title>
+
+		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
@@ -14,8 +16,8 @@
 
 			<div class="add-comment">
 				<!--<input type="text" class="comment-input" placeholder="New Comment" ng-model="newComment" ng-keyup="add($event)"/>-->
-				<input type="text" ng-model="newComment" class="comment-input" placeholder="New comment"/>
-				<button ng-click="add($event)">+</button>
+				<input type="text" ng-model="newComment" placeholder="Add a comment"/>
+				<button ng-click="addCommentFromInputBox($event)">+</button>
 			</div>
 
 			<ul class="comments" ng-repeat="comment in commentsList">
@@ -24,6 +26,10 @@
 				</li>
 			</ul>
 		</div>
+
+		<footer>
+			<p>This work is released into the public domain</p>
+		</footer>
 
 		<!-- Following from: https://docs.angularjs.org/misc/downloading -->
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
