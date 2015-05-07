@@ -7,25 +7,13 @@ app.controller('CommentCtrl', function ($scope) {
 		'Me too'
 	];
 
-	$scope.add = function () { 
-		if ($scope.newComment !== '') {
-			$scope.commentsList.push($scope.newComment);
-			$scope.newComment = '';
-		}
-	}
-});
-
-/*
-	$scope.add = function ($e) { 
-		if (e.which && e.which === 13) { // 13 = Enter
+	$scope.add = function (e) { 
+		if ((e.which && e.which === 13) && ($scope.newComment !== '')) { // 13 = Enter key
 			$scope.commentsList.push($scope.newComment);
 			$scope.newComment = '';
 		} else {
-			if ($scope.newComment !== '') {
-					$scope.commentsList.push($scope.newComment);
-					$scope.newComment = '';
-			}
+			$scope.commentsList.push($scope.newComment);
+			$scope.newComment = '';
 		}
 	};
 });
-*/
