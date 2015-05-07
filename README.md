@@ -15,6 +15,8 @@ __Prompt:__ Will come back to this.
 
 __Status:__ Working
 
+__Note:__ I had the Enter key functionality working a few commits ago... Not quite sure what happened. The code to support it is all there though.
+
 __References:__<br>
 
 - http://medialoot.com/blog/angularjs-for-absolute-beginners/<br>
