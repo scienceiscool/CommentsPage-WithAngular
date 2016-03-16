@@ -7,12 +7,17 @@ app.controller('CommentCtrl', function ($scope) {
 		'Me too'
 	];
 
-	$scope.addCommentFromInputBox = function (e) { 
-		if ((e.which && e.which === 13) && ($scope.newComment !== '')) { // 13 = Enter key
-			//console.log("hi");
+	// reference: http://codepen.io/TheLarkInn/post/angularjs-directive-labs-ngenterkey
+	$scope.checkIfEnterKeyWasPressed = function($e){
+		var keyCode = $e.which || $e.keyCode;
+		if (keyCode === 13 && $scope.newComment !== '') {
 			$scope.commentsList.push($scope.newComment);
 			$scope.newComment = '';
-		} else if ($scope.newComment !== '') {
+		}
+	};
+
+	$scope.addCommentFromInputBox = function () {
+		if ($scope.newComment !== '') {
 			$scope.commentsList.push($scope.newComment);
 			$scope.newComment = '';
 		}

@@ -16,8 +16,7 @@
 			<p>A simple app that allows a user to input comments</p>
 
 			<div class="add-comment">
-				<!--<input type="text" class="comment-input" placeholder="New Comment" ng-model="newComment" ng-keyup="add($event)"/>-->
-				<input type="text" ng-model="newComment" placeholder="Add a comment"/>
+				<input type="text" ng-model="newComment" ng-keypress="checkIfEnterKeyWasPressed($event)" placeholder="Add a comment"/>
 				<button ng-click="addCommentFromInputBox($event)">+</button>
 			</div>
 
